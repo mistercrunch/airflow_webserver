@@ -5,10 +5,8 @@ from setuptools import setup, find_packages
 GITHUB_URL = 'https://github.com/mistercrunch/airflow-webserver'
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 PACKAGE_DIR = os.path.join(BASE_DIR, 'airflow-webserver', 'assets')
-PACKAGE_FILE = os.path.join(PACKAGE_DIR, 'package.json')
 
-with open(PACKAGE_FILE) as f:
-    version_string = json.load(f)['version']
+version_string = "0.1.0"
 
 setup(
     name='airflow_webserver',

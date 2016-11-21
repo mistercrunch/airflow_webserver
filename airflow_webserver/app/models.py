@@ -4,7 +4,3 @@ from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
 
 from airflow.models import *
-
-
-print('-='*50)
-print(dir())
